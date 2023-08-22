@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v19.10 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Настройка Zsh и Oh my Zsh - Losst</title>
+	<meta name="description" content="Z-shell (или Zsh) - это интерактивная оболочка для операционных систем на базе ядра Linux. Даже если вы начинающий пользователь, скорее всего, вы уже" />
+	<link rel="canonical" href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Настройка Zsh и Oh my Zsh - Losst" />
+	<meta property="og:description" content="Z-shell (или Zsh) - это интерактивная оболочка для операционных систем на базе ядра Linux. Даже если вы начинающий пользователь, скорее всего, вы уже" />
+	<meta property="og:url" content="https://losst.pro/nastrojka-zsh-i-oh-my-zsh" />
+	<meta property="og:site_name" content="Losst" />
+	<meta property="article:published_time" content="2020-09-30T09:09:25+00:00" />
+	<meta property="article:modified_time" content="2020-09-30T09:29:23+00:00" />
+	<meta property="og:image" content="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43.png" />
+	<meta property="og:image:width" content="1600" />
+	<meta property="og:image:height" content="900" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="admin" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Написано автором" />
+	<meta name="twitter:data1" content="admin" />
+	<meta name="twitter:label2" content="Примерное время для чтения" />
+	<meta name="twitter:data2" content="1 минута" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh#article","isPartOf":{"@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh"},"author":{"name":"admin","@id":"https://losst.pro/#/schema/person/0aea7ee0c26b4e6d1ffd7eb037989733"},"headline":"Настройка Zsh и Oh my Zsh","datePublished":"2020-09-30T09:09:25+00:00","dateModified":"2020-09-30T09:29:23+00:00","mainEntityOfPage":{"@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh"},"wordCount":841,"commentCount":7,"publisher":{"@id":"https://losst.pro/#organization"},"image":{"@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh#primaryimage"},"thumbnailUrl":"https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43.png","articleSection":["Инструкции"],"inLanguage":"ru-RU","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://losst.pro/nastrojka-zsh-i-oh-my-zsh#respond"]}]},{"@type":"WebPage","@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh","url":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh","name":"Настройка Zsh и Oh my Zsh - Losst","isPartOf":{"@id":"https://losst.pro/#website"},"primaryImageOfPage":{"@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh#primaryimage"},"image":{"@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh#primaryimage"},"thumbnailUrl":"https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43.png","datePublished":"2020-09-30T09:09:25+00:00","dateModified":"2020-09-30T09:29:23+00:00","description":"Z-shell (или Zsh) - это интерактивная оболочка для операционных систем на базе ядра Linux. Даже если вы начинающий пользователь, скорее всего, вы уже","breadcrumb":{"@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://losst.pro/nastrojka-zsh-i-oh-my-zsh"]}]},{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh#primaryimage","url":"https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43.png","contentUrl":"https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43.png","width":1600,"height":900},{"@type":"BreadcrumbList","@id":"https://losst.pro/nastrojka-zsh-i-oh-my-zsh#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://losst.pro/"},{"@type":"ListItem","position":2,"name":"Инструкции","item":"https://losst.pro/instruktsii"},{"@type":"ListItem","position":3,"name":"Настройка Zsh и Oh my Zsh"}]},{"@type":"WebSite","@id":"https://losst.pro/#website","url":"https://losst.pro/","name":"Losst","description":"Linux Open Source Software Technologies","publisher":{"@id":"https://losst.pro/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://losst.pro/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"},{"@type":"Organization","@id":"https://losst.pro/#organization","name":"Losst","url":"https://losst.pro/","logo":{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://losst.pro/#/schema/logo/image/","url":"https://losst.pro/wp-content/uploads/2017/01/cropped-LOSSTNEW_2.0-text.png","contentUrl":"https://losst.pro/wp-content/uploads/2017/01/cropped-LOSSTNEW_2.0-text.png","width":1919,"height":383,"caption":"Losst"},"image":{"@id":"https://losst.pro/#/schema/logo/image/"}},{"@type":"Person","@id":"https://losst.pro/#/schema/person/0aea7ee0c26b4e6d1ffd7eb037989733","name":"admin","image":{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://losst.pro/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/579224caff116f83cf36783155cfd699?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/579224caff116f83cf36783155cfd699?s=96&d=mm&r=g","caption":"admin"},"description":"Основатель и администратор сайта losst.ru, увлекаюсь открытым программным обеспечением и операционной системой Linux. В качестве основной ОС сейчас использую Ubuntu. Кроме Linux, интересуюсь всем, что связано с информационными технологиями и современной наукой.","sameAs":["https://losst.ru"],"url":"https://losst.pro/author/admin"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link href='https://fonts.googleapis.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Losst &raquo; Лента" href="https://losst.pro/feed" />
+<link rel="alternate" type="application/rss+xml" title="Losst &raquo; Лента комментариев" href="https://losst.pro/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Losst &raquo; Лента комментариев к &laquo;Настройка Zsh и Oh my Zsh&raquo;" href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh/feed" />
+    <style>
+        .social {
+            -moz-transition: all 0.8s ease-in-out;
+            -webkit-transition: all 0.8s ease-in-out;
+            -o-transition: all 0.8s ease-in-out;
+            -ms-transition: all 0.8s ease-in-out;
+            transition: all 0.8s cubic-bezier(0, 0, 0.58, 1)
+        }
+
+        /* Поворот на 360 градусов при наведении курсора*/
+
+        .social:hover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .social_tack {
+            text-decoration: none;
+        }
+    </style>
+                <style>
+                span.posted-on {
+                    margin-left: 0.2em !important;
+                }
+
+                .posted-on .updated {
+                    display: inline-block !important;
+                    margin-left: 0.2em !important;
+                }
+            </style>
+                        <style>
+                .masonry-load-more {
+                    display: flex !important;
+                    justify-content: center !important;
+                }
+            </style>
+                        <style>
+                #signup-content {
+                    padding-top: 50px !important;
+                }
+
+                .mu_register form #user_name, #user_email {
+                    border-color: #444444;
+                }
+
+                .mu_register form #user_name:focus, #user_email:focus {
+                    border-color: #ff9950;
+                }
+
+                #activateform #key {
+                    border-color: #444444;
+                }
+
+                #activateform #key:focus {
+                    border-color: #ff9950;
+                }
+            </style>
+            <link rel='stylesheet' id='wp-block-library-css' href='https://losst.pro/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' media='all' />
+<style id='losst-about-the-author-style-inline-css'>
+.postauthor{clear:both;float:left;margin:0;min-height:180px;padding-bottom:30px;padding-top:30px;width:100%}.postauthor .vcard{margin-bottom:15px}.postauthor .vcard .fa{padding-right:7px}.postauthor .vcard .fn{font-size:17px;font-weight:600;margin-right:18px;text-decoration:none;text-transform:uppercase}.author-box{float:left;width:100%}.author-box img,.author-box-content{margin:0}.author-box img{float:left;max-width:120px;width:19.2%}.author-box-content{min-height:150px;overflow:hidden;padding:0 0 0 20px;position:relative}.postauthor p{margin-bottom:0;padding-top:0}.postauthor h2 a{color:#444!important}.postauthor h2{margin-bottom:25px;margin-top:0}.clearpostauthor{clear:both}
+
+</style>
+<style id='losst-terminal-command-style-inline-css'>
+code{background-color:rgba(0,0,0,.05)!important;border-bottom-left-radius:3px;border-bottom-right-radius:3px;border-top-left-radius:3px;border-top-right-radius:3px;box-sizing:border-box;display:block;font-family:inherit!important;font-size:inherit!important;line-height:1.5;margin-bottom:10px!important;padding:15px!important;width:97%}code.user:before{content:"$";margin-right:6px}code.root:before{content:"#";margin-right:6px}
+
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://losst.pro/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://losst.pro/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7' media='all' />
+<link rel='stylesheet' id='wp-polls-css' href='https://losst.pro/wp-content/plugins/wp-polls/polls-css.css?ver=2.77.0' media='all' />
+<style id='wp-polls-inline-css'>
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background: #ff9950;
+	border: 1px solid #ff9950;
+}
+
+</style>
+<link rel='stylesheet' id='wp-postratings-css' href='https://losst.pro/wp-content/plugins/wp-postratings/css/postratings-css.css?ver=1.90' media='all' />
+<link rel='stylesheet' id='generate-comments-css' href='https://losst.pro/wp-content/themes/generatepress/assets/css/components/comments.min.css?ver=3.2.1' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='https://losst.pro/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.2.1' media='all' />
+<style id='generate-style-inline-css'>
+body{background-color:var(--base-2);color:var(--contrast);}a{color:var(--accent);}a{text-decoration:underline;}.entry-title a, .site-branding a, a.button, .wp-block-button__link, .main-navigation a{text-decoration:none;}a:hover, a:focus, a:active{color:var(--contrast);}.wp-block-group__inner-container{max-width:1200px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:1200px;}.generate-back-to-top{font-size:20px;border-radius:3px;position:fixed;bottom:30px;right:30px;line-height:40px;width:40px;text-align:center;z-index:10;transition:opacity 300ms ease-in-out;opacity:0.1;transform:translateY(1000px);}.generate-back-to-top__show{opacity:1;transform:translateY(0);}:root{--contrast:#434343;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#ff9950;}.has-contrast-color{color:var(--contrast);}.has-contrast-background-color{background-color:var(--contrast);}.has-contrast-2-color{color:var(--contrast-2);}.has-contrast-2-background-color{background-color:var(--contrast-2);}.has-contrast-3-color{color:var(--contrast-3);}.has-contrast-3-background-color{background-color:var(--contrast-3);}.has-base-color{color:var(--base);}.has-base-background-color{background-color:var(--base);}.has-base-2-color{color:var(--base-2);}.has-base-2-background-color{background-color:var(--base-2);}.has-base-3-color{color:var(--base-3);}.has-base-3-background-color{background-color:var(--base-3);}.has-accent-color{color:var(--accent);}.has-accent-background-color{background-color:var(--accent);}h1{font-family:Source Sans Pro, sans-serif;font-weight:600;font-size:32px;line-height:1.4em;}h2{font-family:Source Sans Pro, sans-serif;font-weight:600;font-size:28px;line-height:1.4em;}h3{font-family:Source Sans Pro, sans-serif;font-weight:600;font-size:24px;line-height:1.4em;}h4{font-family:Source Sans Pro, sans-serif;font-weight:600;font-size:20px;}h5{font-family:Source Sans Pro, sans-serif;font-weight:600;font-size:18px;}body, button, input, select, textarea{font-family:Open Sans, sans-serif;font-size:16px;}body{line-height:24px;}.widget-title{font-family:Source Sans Pro, sans-serif;font-weight:600;font-size:28px;}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ff9950;}.main-title a,.main-title a:hover{color:var(--contrast);}.site-description{color:var(--contrast-2);}.main-navigation,.main-navigation ul ul{background-color:rgba(0,0,0,0.77);}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:var(--base-2);}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:var(--base-3);background-color:rgba(0,0,0,0.1);}button.menu-toggle:hover,button.menu-toggle:focus{color:var(--base-2);}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:var(--base-3);}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:var(--base-3);background-color:rgba(0,0,0,0.1);}.main-navigation ul ul{background-color:rgba(0,0,0,0.77);}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:var(--base-3);}.entry-title a{color:var(--contrast);}.entry-title a:hover{color:var(--accent);}.entry-meta{color:var(--contrast-2);}.sidebar .widget{background-color:var(--base-3);}.footer-widgets{background-color:var(--base-3);}.site-info{background-color:var(--base-3);}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:var(--contrast);background-color:var(--base-2);border-color:var(--base);}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:var(--contrast);background-color:var(--base-2);border-color:var(--contrast-3);}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#ff9950;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f4047;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}@media (max-width: 768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:var(--base-2);}}.inside-header{padding:0px;}.nav-below-header .main-navigation .inside-navigation.grid-container, .nav-above-header .main-navigation .inside-navigation.grid-container{padding:0px 20px 0px 20px;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px 20px 10px 20px;}.site-main .wp-block-group__inner-container{padding:30px 20px 10px 20px;}.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-20px;width:calc(100% + 40px);max-width:calc(100% + 40px);}.one-container.right-sidebar .site-main,.one-container.both-right .site-main{margin-right:20px;}.one-container.left-sidebar .site-main,.one-container.both-left .site-main{margin-left:20px;}.one-container.both-sidebars .site-main{margin:0px 20px 0px 20px;}.one-container.archive .post:not(:last-child):not(.is-loop-template-item), .one-container.blog .post:not(:last-child):not(.is-loop-template-item){padding-bottom:10px;}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}.widget-area .widget{padding:10px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:20px;}.site-main .wp-block-group__inner-container{padding:20px;}.inside-top-bar{padding-right:30px;padding-left:30px;}.inside-header{padding-right:0px;padding-left:0px;}.widget-area .widget{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.inside-site-info{padding-right:30px;padding-left:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-20px;width:calc(100% + 40px);max-width:calc(100% + 40px);}.one-container .site-main .paging-navigation{margin-bottom:20px;}}/* End cached CSS */.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:70%;}@media (max-width: 768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .menu-bar-item > a{transition: line-height 300ms ease}.main-navigation.toggled .main-nav > ul{background-color: rgba(0,0,0,0.77)}.sticky-enabled .gen-sidebar-nav.is_stuck .main-navigation {margin-bottom: 0px;}.sticky-enabled .gen-sidebar-nav.is_stuck {z-index: 500;}.sticky-enabled .main-navigation.is_stuck {box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);}.navigation-stick:not(.gen-sidebar-nav) {left: 0;right: 0;width: 100% !important;}.nav-float-right .navigation-stick {width: 100% !important;left: 0;}.nav-float-right .navigation-stick .navigation-branding {margin-right: auto;}.main-navigation.has-sticky-branding:not(.grid-container) .inside-navigation:not(.grid-container) .navigation-branding{margin-left: 10px;}.main-navigation.navigation-stick.has-sticky-branding .inside-navigation.grid-container{padding-left:0px;padding-right:0px;}@media (max-width:768px){.main-navigation.navigation-stick.has-sticky-branding .inside-navigation.grid-container{padding-left:0;padding-right:0;}}
+.post-image:not(:first-child), .page-content:not(:first-child), .entry-content:not(:first-child), .entry-summary:not(:first-child), footer.entry-meta{margin-top:1.5em;}.post-image-above-header .inside-article div.featured-image, .post-image-above-header .inside-article div.post-image{margin-bottom:1.5em;}
+</style>
+<link rel='stylesheet' id='generate-google-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&#038;display=auto&#038;ver=3.2.1' media='all' />
+<link rel='stylesheet' id='yarpp-thumbnails-css' href='https://losst.pro/wp-content/plugins/yet-another-related-posts-plugin/style/styles_thumbnails.css?ver=5.30.1' media='all' />
+<style id='yarpp-thumbnails-inline-css'>
+.yarpp-thumbnails-horizontal .yarpp-thumbnail {width: 160px;height: 200px;margin: 5px;margin-left: 0px;}.yarpp-thumbnail > img, .yarpp-thumbnail-default {width: 150px;height: 150px;margin: 5px;}.yarpp-thumbnails-horizontal .yarpp-thumbnail-title {margin: 7px;margin-top: 0px;width: 150px;}.yarpp-thumbnail-default > img {min-height: 150px;min-width: 150px;}
+</style>
+<link rel='stylesheet' id='generate-blog-columns-css' href='https://losst.pro/wp-content/plugins/gp-premium/blog/functions/css/columns.min.css?ver=2.2.0' media='all' />
+<link rel='stylesheet' id='generate-offside-css' href='https://losst.pro/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.2.0' media='all' />
+<style id='generate-offside-inline-css'>
+.slideout-navigation, .slideout-navigation a{color:var(--base-2);}.slideout-navigation button.slideout-exit{color:var(--base-2);padding-left:20px;padding-right:20px;}.slide-opened nav.toggled .menu-toggle:before{display:none;}@media (max-width: 768px){.menu-bar-item.slideout-toggle{display:none;}}
+</style>
+<link rel='stylesheet' id='generate-navigation-branding-css' href='https://losst.pro/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css?ver=2.2.0' media='all' />
+<style id='generate-navigation-branding-inline-css'>
+@media (max-width: 768px){.site-header, #site-navigation, #sticky-navigation{display:none !important;opacity:0.0;}#mobile-header{display:block !important;width:100% !important;}#mobile-header .main-nav > ul{display:none;}#mobile-header.toggled .main-nav > ul, #mobile-header .menu-toggle, #mobile-header .mobile-bar-items{display:block;}#mobile-header .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;}}.main-navigation.has-branding .inside-navigation.grid-container, .main-navigation.has-branding.grid-container .inside-navigation:not(.grid-container){padding:0px 20px 0px 20px;}.main-navigation.has-branding:not(.grid-container) .inside-navigation:not(.grid-container) .navigation-branding{margin-left:10px;}.navigation-branding img, .site-logo.mobile-header-logo img{height:60px;width:auto;}.navigation-branding .main-title{line-height:60px;}@media (max-width: 768px){.main-navigation.has-branding.nav-align-center .menu-bar-items, .main-navigation.has-sticky-branding.navigation-stick.nav-align-center .menu-bar-items{margin-left:auto;}.navigation-branding{margin-right:auto;margin-left:10px;}.navigation-branding .main-title, .mobile-header-navigation .site-logo{margin-left:10px;}.main-navigation.has-branding .inside-navigation.grid-container{padding:0px;}}
+</style>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    let pagination = document.getElementById('nav-below');
+                    if (pagination !== undefined) {
+                        pagination.style.display = 'none';
+                    }
+                }, true);
+            </script>
+            <script src='https://losst.pro/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script src='https://losst.pro/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://losst.pro/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://losst.pro/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel='shortlink' href='https://losst.pro/?p=33888' />
+<link rel="alternate" type="application/json+oembed" href="https://losst.pro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh" />
+<link rel="alternate" type="text/xml+oembed" href="https://losst.pro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh&#038;format=xml" />
+<link rel="alternate" hreflang="x-default" href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh" title="Русский" />
+<link rel="pingback" href="https://losst.pro/xmlrpc.php">
+
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+
+<!-- END recaptcha -->
+      <meta name="onesignal" content="wordpress-plugin"/>
+            <script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("https://losst.pro");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = 'c8dc3420-8a56-489e-bb88-20a9906b894b';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "Losst";
+oneSignal_options['welcomeNotification']['message'] = "Спасибо за подписку!";
+oneSignal_options['path'] = "https://losst.pro/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.4787ada6-f101-40da-894e-0a68fad84e0f";
+oneSignal_options['promptOptions'] = { };
+oneSignal_options['promptOptions']['actionMessage'] = "Подписывайтесь на уведомления о новых постах и обновлениях Losst.";
+oneSignal_options['promptOptions']['exampleNotificationTitleDesktop'] = "Это заголовок";
+oneSignal_options['promptOptions']['exampleNotificationMessageDesktop'] = "Текст уведомления";
+oneSignal_options['promptOptions']['exampleNotificationTitleMobile'] = "Загловок";
+oneSignal_options['promptOptions']['exampleNotificationMessageMobile'] = "Текст уведомления";
+oneSignal_options['promptOptions']['exampleNotificationCaption'] = "Вы можете отписаться в любой момент";
+oneSignal_options['promptOptions']['acceptButtonText'] = "Включить";
+oneSignal_options['promptOptions']['cancelButtonText'] = "Нет, спасибо";
+oneSignal_options['notifyButton'] = { };
+oneSignal_options['notifyButton']['enable'] = true;
+oneSignal_options['notifyButton']['position'] = 'bottom-left';
+oneSignal_options['notifyButton']['theme'] = 'inverse';
+oneSignal_options['notifyButton']['size'] = 'medium';
+oneSignal_options['notifyButton']['showCredit'] = false;
+oneSignal_options['notifyButton']['text'] = {};
+oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Подписка на уведомления';
+oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Вы подписаны на уведомления';
+oneSignal_options['notifyButton']['text']['tip.state.blocked'] = 'Уведомления заблокированы';
+oneSignal_options['notifyButton']['text']['message.action.subscribed'] = 'Спасибо за подписку!';
+oneSignal_options['notifyButton']['text']['message.action.resubscribed'] = 'Вы снова подписаны на уведомления Losst';
+oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'Вы не будете больше получать уведомлений';
+oneSignal_options['notifyButton']['text']['dialog.main.title'] = 'Управление уведомлениями';
+oneSignal_options['notifyButton']['text']['dialog.main.button.subscribe'] = 'Включить';
+oneSignal_options['notifyButton']['text']['dialog.main.button.unsubscribe'] = 'Выключить';
+oneSignal_options['notifyButton']['text']['dialog.blocked.title'] = 'Разблокировать уведомления';
+oneSignal_options['notifyButton']['text']['dialog.blocked.message'] = 'Выполните эти инструкции чтобы включить уведомления:';
+oneSignal_options['notifyButton']['colors'] = {};
+oneSignal_options['notifyButton']['colors']['circle.background'] = '#ff9950';
+oneSignal_options['notifyButton']['colors']['circle.foreground'] = '#ffffff';
+oneSignal_options['notifyButton']['colors']['dialog.button.background'] = '#ff9950';
+oneSignal_options['notifyButton']['colors']['dialog.button.background.hovering'] = '#ff9950';
+oneSignal_options['notifyButton']['colors']['dialog.button.background.active'] = '#ff9950';
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<meta name="google-site-verification" content="MLJTyNsDZbjcYnWos4oWiIGSb7_tC5FS7kW5Glnj3IY" />
+<meta name="yandex-verification" content="7504851606db83e2" /><script async src="https://yandex.ru/ads/system/header-bidding.js"></script>
+<script>
+const dcJs = document.createElement('script'); 
+dcJs.src = "https://ads.digitalcaramel.com/js/losst.pro.js?ts="+new Date().getTime();
+dcJs.async = true;
+document.head.appendChild(dcJs);
+</script>
+<script>window.yaContextCb = window.yaContextCb || [] </script> 
+<script async src="https://yandex.ru/ads/system/context.js"></script><!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = 'www.themoneytizer.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.quantcast.com'
+    .concat('/choice/', '6Fv0cGNfc_bw8', '/', host, '/choice.js');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = { ...args[3], tag_version: 'V2' };
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) --><script async src="https://juqu1Aesh2.semmi.ru/js/oith0Shup2.js"></script>
+<script>window.semmi_ads = window.semmi_ads || []</script><link rel="icon" href="https://losst.pro/wp-content/uploads/2017/01/cropped-lt-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://losst.pro/wp-content/uploads/2017/01/cropped-lt-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://losst.pro/wp-content/uploads/2017/01/cropped-lt-180x180.png" />
+<meta name="msapplication-TileImage" content="https://losst.pro/wp-content/uploads/2017/01/cropped-lt-270x270.png" />
+		<style id="wp-custom-css">
+			.widget_meta {
+	  background: #444444 !important;
+    padding-bottom: 20px !important;
+}
+
+.widget_meta .widget-title {
+    color: white;
+}
+.widget_meta a {
+		border-style: solid;
+	  border-width: 1px;
+		border-color: #ff9950;
+    background-color: #ff9950;
+	  color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+	  font-size: 16px;
+	  font-style: bold;
+}
+
+.widget_meta a:hover{
+	background-color: white;
+	color: #ff9950;
+}
+
+@media screen and (min-width: 1200px) {
+	.entry-summary {
+		overflow: hidden;
+	}
+}
+
+.comment-content {
+    background: #f7f8f9;
+	  padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.comment-body {
+	padding-bottom: 10px;
+}
+
+.yarpp-related h3 {
+		font-family: Source Sans Pro, sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    margin: 0;
+    padding: 0 0 5px;
+    text-transform: none !important;
+}
+
+.masonry-load-more {
+		display: flex;
+    justify-content: center;
+}
+
+.grecaptcha-badge{
+   bottom: 84px !important;	
+}
+	
+.inside-right-sidebar h2 {
+	 text-transform: uppercase;
+}
+
+.main-navigation{
+	backdrop-filter: blur(2px);
+}
+
+.lang-switcher {
+  padding-top: 20px;
+  padding-bottom: 20px;
+	width: 100%;
+	display: flex;
+}
+
+.lang-switcher a {
+	  padding-top: 20px !important;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: white;
+    background: #ff9950;
+		text-align: center;
+		flex: 50%;
+	  text-decoration: none;
+}
+
+.lang-switcher  a.current_language {
+	background: white;
+	color: #ff9950;
+	padding-top: 18px !important;
+	padding-bottom:18px !important;
+	border: 1px solid #ff9950;
+}
+
+.lang-switcher  a.current_language:hover{
+	background: white;
+}
+
+.lang-switcher a:hover {
+    background: #444444;
+}
+
+:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){
+	border: none;
+}
+
+.inside-right-sidebar > aside > p {
+	margin: 0 !important;
+}
+
+span.posted-on {
+   margin-left: 0.2em;
+}
+.posted-on .updated {
+	  display: inline-block;
+    margin-left: 0.2em;
+}
+
+#mc4wp_form_widget-2{
+	color: white;
+	background: #444444;
+}
+
+#mc4wp_form_widget-2 a {
+	color: white;
+}
+
+#mc4wp_form_widget-2 input[type="submit"]:hover {
+	background: white;
+	color: #ff9950;
+	border-color: #ff9950;
+}		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-33888 single-format-standard wp-custom-logo wp-embed-responsive post-image-above-header post-image-aligned-center slideout-enabled slideout-mobile sticky-menu-slide sticky-enabled both-sticky-menu mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-above-header separate-containers nav-aligned-left header-aligned-center dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><a class="screen-reader-text skip-link" href="#content" title="Перейти к содержимому">Перейти к содержимому</a>		<header class="site-header" id="masthead" aria-label="Сайт"  itemtype="https://schema.org/WPHeader" itemscope>
+					<nav class="main-navigation sub-menu-right" id="site-navigation" aria-label="Основной"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation">
+								<button class="menu-toggle" aria-controls="generate-slideout-menu" aria-expanded="false">
+					<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="mobile-menu">Меню</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-kategorii" class=" menu sf-menu"><li id="menu-item-8567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8567"><a href="//losst.pro/">Главная</a></li>
+<li id="menu-item-8575" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8575"><a href="https://losst.pro/novosti">Новости</a></li>
+<li id="menu-item-8568" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8568"><a href="#" target="_blank" rel="nofollow">Категории<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-19733" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19733"><a href="https://losst.pro/instruktsii">Инструкции</a></li>
+	<li id="menu-item-30336" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30336"><a href="https://losst.pro/commands">Команды</a></li>
+	<li id="menu-item-8580" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8580"><a href="https://losst.pro/distributivu">Дистрибутивы</a></li>
+	<li id="menu-item-8571" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8571"><a href="https://losst.pro/rewiews">Обзоры</a></li>
+	<li id="menu-item-8582" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8582"><a href="https://losst.pro/applications">Программы</a></li>
+	<li id="menu-item-8588" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8588"><a href="https://losst.pro/system">Система</a></li>
+	<li id="menu-item-8584" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8584"><a href="https://losst.pro/oformlenie">Оформление</a></li>
+	<li id="menu-item-8577" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8577"><a href="https://losst.pro/terminal">Терминал</a></li>
+	<li id="menu-item-8579" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8579"><a href="https://losst.pro/info">Информация</a></li>
+	<li id="menu-item-8569" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8569"><a href="https://losst.pro/security">Безопасность</a></li>
+	<li id="menu-item-8587" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8587"><a href="https://losst.pro/server">Сервер</a></li>
+	<li id="menu-item-8586" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8586"><a href="https://losst.pro/yadro">Ядро</a></li>
+	<li id="menu-item-8585" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8585"><a href="https://losst.pro/programming">Программирование</a></li>
+	<li id="menu-item-8578" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8578"><a href="https://losst.pro/games">Игры</a></li>
+	<li id="menu-item-8583" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8583"><a href="https://losst.pro/multimedia">Мультимедиа</a></li>
+	<li id="menu-item-8570" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8570"><a href="https://losst.pro/android">Android</a></li>
+	<li id="menu-item-8572" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8572"><a href="https://losst.pro/windows">Windows</a></li>
+	<li id="menu-item-8581" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8581"><a href="https://losst.pro/hardware">Оборудование</a></li>
+</ul>
+</li>
+<li id="menu-item-8574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8574"><a href="#" target="_blank" rel="nofollow">Рекомендуем<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-8600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8600"><a href="https://losst.pro/vybor-distributiva">Дистрибутив</a></li>
+	<li id="menu-item-8601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8601"><a href="https://losst.pro/gvim">Текстовый редактор</a></li>
+	<li id="menu-item-43707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43707"><a href="https://losst.pro/vlc">Видеоплеер</a></li>
+</ul>
+</li>
+<li id="menu-item-8589" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8589"><a href="https://losst.pro/knigi">Книги</a></li>
+<li id="menu-item-26354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26354"><a href="https://losst.pro/dostupnye-golosovaniya">Опросы</a></li>
+<li id="menu-item-8573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8573"><a href="#" target="_blank" rel="nofollow">Losst<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-8598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8598"><a href="https://losst.pro/about">О Проекте</a></li>
+	<li id="menu-item-8609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8609"><a href="https://losst.pro/istoriya-losst">История Losst</a></li>
+	<li id="menu-item-8599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8599"><a href="https://losst.pro/obratnaya-svyaz">Обратная связь</a></li>
+	<li id="menu-item-8607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8607"><a href="https://losst.pro/nachnite-izuchat-linux-pryamo-sejchas">Содержание сайта</a></li>
+	<li id="menu-item-22834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22834"><a href="https://losst.pro/litsenziya-creative-commons-attribution-share-alike-4-0">Использование материалов</a></li>
+	<li id="menu-item-41251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41251"><a href="https://losst.pro/reklama">Реклама</a></li>
+</ul>
+</li>
+</ul></div>			</div>
+		</nav>
+					<div class="inside-header">
+				<div class="site-logo">
+					<a href="https://losst.pro/" rel="home">
+						<img  class="header-image is-logo-image" alt="Losst" src="https://losst.pro/wp-content/uploads/2017/01/cropped-LOSSTNEW_2.0-text.png" width="1919" height="383" />
+					</a>
+				</div>			</div>
+		</header>
+				<nav id="mobile-header" itemtype="https://schema.org/SiteNavigationElement" itemscope class="main-navigation mobile-header-navigation has-branding has-sticky-branding">
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="site-logo mobile-header-logo">
+						<a href="https://losst.pro/" title="Losst" rel="home">
+							<img src="https://test.losst.ru/en/wp-content/uploads/sites/2/2022/11/cropped-cropped-lt-1.png" alt="Losst" class="is-logo-image" width="" height="" />
+						</a>
+					</div>					<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+						<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="mobile-menu">Меню</span>					</button>
+					<div id="mobile-menu" class="main-nav"><ul id="menu-kategorii-1" class=" menu sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8567"><a href="//losst.pro/">Главная</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8575"><a href="https://losst.pro/novosti">Новости</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8568"><a href="#" target="_blank" rel="nofollow">Категории<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19733"><a href="https://losst.pro/instruktsii">Инструкции</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30336"><a href="https://losst.pro/commands">Команды</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8580"><a href="https://losst.pro/distributivu">Дистрибутивы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8571"><a href="https://losst.pro/rewiews">Обзоры</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8582"><a href="https://losst.pro/applications">Программы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8588"><a href="https://losst.pro/system">Система</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8584"><a href="https://losst.pro/oformlenie">Оформление</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8577"><a href="https://losst.pro/terminal">Терминал</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8579"><a href="https://losst.pro/info">Информация</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8569"><a href="https://losst.pro/security">Безопасность</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8587"><a href="https://losst.pro/server">Сервер</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8586"><a href="https://losst.pro/yadro">Ядро</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8585"><a href="https://losst.pro/programming">Программирование</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8578"><a href="https://losst.pro/games">Игры</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8583"><a href="https://losst.pro/multimedia">Мультимедиа</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8570"><a href="https://losst.pro/android">Android</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8572"><a href="https://losst.pro/windows">Windows</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8581"><a href="https://losst.pro/hardware">Оборудование</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8574"><a href="#" target="_blank" rel="nofollow">Рекомендуем<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8600"><a href="https://losst.pro/vybor-distributiva">Дистрибутив</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8601"><a href="https://losst.pro/gvim">Текстовый редактор</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43707"><a href="https://losst.pro/vlc">Видеоплеер</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8589"><a href="https://losst.pro/knigi">Книги</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26354"><a href="https://losst.pro/dostupnye-golosovaniya">Опросы</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8573"><a href="#" target="_blank" rel="nofollow">Losst<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8598"><a href="https://losst.pro/about">О Проекте</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8609"><a href="https://losst.pro/istoriya-losst">История Losst</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8599"><a href="https://losst.pro/obratnaya-svyaz">Обратная связь</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8607"><a href="https://losst.pro/nachnite-izuchat-linux-pryamo-sejchas">Содержание сайта</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22834"><a href="https://losst.pro/litsenziya-creative-commons-attribution-share-alike-4-0">Использование материалов</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41251"><a href="https://losst.pro/reklama">Реклама</a></li>
+</ul>
+</li>
+</ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+		
+	<div class="site grid-container container hfeed" id="page">
+				<div class="site-content" id="content">
+			
+	<div class="content-area" id="primary">
+		<main class="site-main" id="main">
+			
+<article id="post-33888" class="post-33888 post type-post status-publish format-standard has-post-thumbnail hentry category-instruktsii infinite-scroll-item" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+					<header class="entry-header" aria-label="Содержимое">
+				<span><span><a href="https://losst.pro/">Главная</a> &gt;&gt; <span><a href="https://losst.pro/instruktsii">Инструкции</a> &gt;&gt; <span class="breadcrumb_last" aria-current="page">Настройка Zsh и Oh my Zsh</span></span></span></span><h1 class="entry-title" itemprop="headline">Настройка Zsh и Oh my Zsh</h1>		<div class="entry-meta">
+			<span class="posted-on"> Опубликовано: <time class="entry-date published" datetime="2020-09-30T12:09:25+09:30" itemprop="datePublished">30 сентября, 2020</time></span> <span class="byline">от <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://losst.pro/author/admin" title="Просмотр всех записей admin" rel="author" itemprop="url"><span class="author-name" itemprop="name">admin</span></a></span></span> , 7 комменариев,  время чтения: 6 минут, 55 секунд 		</div>
+					</header>
+			
+		<div class="entry-content" itemprop="text">
+			<p>Z-shell (или Zsh) - это интерактивная оболочка для операционных систем на базе ядра Linux. Даже если вы начинающий пользователь, скорее всего, вы уже несколько раз открывали терминал и выполняли там какие-либо команды. То место, где вы это делали называется командная оболочка. Оболочка, используемая по умолчанию в большинстве дистрибутивов Linux называется Bash.</p><div class='rath2aiD rath2aiD-1' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
+<div id="adfox_1665656062827396"></div>
+<script>
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.createAdaptive({
+            ownerId: 332443,
+            containerId: 'adfox_1665656062827396',
+            params: {
+                p1: 'cvzzw',
+                p2: 'gxxp'
+            }
+        }, ['desktop', 'tablet'], {
+            tabletWidth: 830,
+            phoneWidth: 480,
+            isAutoReloads: false
+        })
+    })
+</script>
+<script>
+setInterval(function(){            
+window.Ya.adfoxCode.reload('adfox_1665656062827396', {onlyIfWasVisible: true})
+}, 30000);
+</script>
+<div id="adfox_166565624646459963"></div>
+<script>
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.createAdaptive({
+            ownerId: 332443,
+            containerId: 'adfox_166565624646459963',
+            params: {
+                p1: 'cvzzy',
+                p2: 'hjzu'
+            }
+        }, ['phone'], {
+            tabletWidth: 830,
+            phoneWidth: 480,
+            isAutoReloads: false
+        })
+    })
+</script>
+<script>
+setInterval(function(){            
+window.Ya.adfoxCode.reload('adfox_166565624646459963', {onlyIfWasVisible: true})
+}, 30000);
+</script></div>
+
+<p>Оболочка Zsh по своей сути такая же как и Bash, только намного интереснее. Она поддерживает интерактивное автодополнение по Tab, автоматический поиск файлов, интегрированные регулярные выражения, а также красивые темы. В этой статье мы рассмотрим как установить и настроить Zsh.<br />
+<span id="more-33888"></span></p>
+<div id="ez-toc-container" class="ez-toc-v2_0_38 counter-hierarchy ez-toc-counter ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title">Содержание статьи:</p>
+<span class="ez-toc-title-toggle"></span></div>
+<nav><ul class='ez-toc-list ez-toc-list-level-1' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_Zsh" title="Установка Zsh">Установка Zsh</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_Zsh" title="Настройка Zsh">Настройка Zsh</a><ul class='ez-toc-list-level-3'><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#1_%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8" title="1. Настройка истории">1. Настройка истории</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#2_%D0%90%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5" title="2. Автодополнение">2. Автодополнение</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#3_%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B" title="3. Раскладка клавиатуры">3. Раскладка клавиатуры</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#4_%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5_%D0%BE%D0%BF%D1%86%D0%B8%D0%B8" title="4. Другие опции">4. Другие опции</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="#5_%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA" title="5. Сохранение настроек">5. Сохранение настроек</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#6_%D0%9F%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B8" title="6. Приглашение оболочки">6. Приглашение оболочки</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#7_%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_oh_my_zsh" title="7. Установка oh my zsh">7. Установка oh my zsh</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#8_%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_%D1%82%D0%B5%D0%BC%D1%8B" title="8. Настройка темы">8. Настройка темы</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#9_%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0_%D0%BF%D0%BE_%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E" title="9. Оболочка по умолчанию">9. Оболочка по умолчанию</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-12" href="#%D0%92%D1%8B%D0%B2%D0%BE%D0%B4%D1%8B" title="Выводы">Выводы</a></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_Zsh"></span>Установка Zsh<span class="ez-toc-section-end"></span></h2>
+<p>Для установки Zsh в Ubuntu выполните такую команду:</p>
+<p><code class="user">sudo apt install zsh</code></p>
+<p>Чтобы установить Zsh в Fedora или CentOS используйте пакетный менеджер dnf:</p>
+<p><code class="user">sudo dnf install zsh</code></p>
+<p>После этого вы можете запустить командную оболочку.</p>
+<h2><span class="ez-toc-section" id="%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_Zsh"></span>Настройка Zsh<span class="ez-toc-section-end"></span></h2>
+<p>Для запуска командной оболочки выполните такую команду:</p>
+<p><code class="user">zsh</code></p>
+<p>При первом запуске Zsh предложит вам настроить вашу оболочку. Здесь вам нужно нажать клавишу <strong>1</strong> чтобы попасть в меню настройки:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-13-18.png"><img decoding="async" class="aligncenter size-large wp-image-33889" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-13-18-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-13-18-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-13-18-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-13-18.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<h3><span class="ez-toc-section" id="1_%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8"></span>1. Настройка истории<span class="ez-toc-section-end"></span></h3>
+<p>В этом меню давайте начнём с первого пункта. Там находятся настройки истории команд. Нажмите 1, затем, чтобы изменить количество команд, которые будут хранится в истории нажмите 3 (<strong>Number of lines of history to save to $HISTFILE</strong>) и введите нужное число:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-16-29.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33891" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-16-29-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-16-29-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-16-29-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-16-29.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<p>Например, я увеличил количество хранимых строк до 5000. Чтобы вернуться в главное меню нажмите <strong>0</strong> (<strong>Remember changes and return to main menu</strong>).</p>
+<h3><span class="ez-toc-section" id="2_%D0%90%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5"></span>2. Автодополнение<span class="ez-toc-section-end"></span></h3>
+<p>Дальше надо настроить автодополнение. Здесь можно выбрать пункт 1 чтобы оставить все настройки по умолчанию - <strong>Turn on completion with default options</strong>:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-20-25.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33892" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-20-25-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-20-25-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-20-25-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-20-25.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<h3><span class="ez-toc-section" id="3_%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B"></span>3. Раскладка клавиатуры<span class="ez-toc-section-end"></span></h3>
+<p>В третьем пункте настроек можно изменить как будут обрабатываться нажатия клавиш клавиатуры во время набора и редактирования команд. По умолчанию используется стиль Emacs, однако, вы можете включить стиль Vim если вы используете этот редактор. Для этого сначала нажмите 3, затем 1 для редактирования раскладки и выберите<strong> v</strong> для Vim:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-24-56.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33893" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-24-56-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-24-56-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-24-56-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-24-56.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<h3><span class="ez-toc-section" id="4_%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5_%D0%BE%D0%BF%D1%86%D0%B8%D0%B8"></span>4. Другие опции<span class="ez-toc-section-end"></span></h3>
+<p>В четвёртом пункте собраны другие опции оболочки. Их можно включить или отключить:</p>
+<ul>
+<li><strong>Change directory given just path</strong> - менять директорию если вы введете в терминале путь к не исполняемому файлу;</li>
+<li><strong>Use additional pattern matching features</strong> - разрешить использовать дополнительные символы при составлении шаблонов поиска совпадений, сюда входят символы <strong>#, ~</strong> и <strong>^</strong>, кроме стандартных <strong>*</strong> и <strong>?</strong>;</li>
+<li><strong>Unmatched patterns cause an error</strong> - выдавать ошибку если шаблон не совпадает;</li>
+<li><strong>Beep on errors</strong> - сигнал при ошибке;</li>
+<li><strong>Immediately report changes in background job status</strong> - сообщать об изменении статуса фоновых задач.</li>
+</ul>
+<p>Чтобы активировать опцию нажмите её цифру, а затем нажмите <strong>s (set)</strong>, для деактивации нажмите <strong>u (unset)</strong>.</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-35-58.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33894" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-35-58-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-35-58-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-35-58-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-35-58.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<h3><span class="ez-toc-section" id="5_%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA"></span>5. Сохранение настроек<span class="ez-toc-section-end"></span></h3>
+<div class='rath2aiD rath2aiD-2' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-3031391294356171"
+     data-ad-slot="3270380652"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+
+<!--
+<script>
+    window.semmi_ads.push({
+       placeId: '77ae7c40-2568-40f9-8cf8-9f1f28729cf9',
+       containerId: 'semmi-ad-a9a3bdcb-93f2-47f9-859f-8d5000b361ab'
+   });
+   //По середине страницы
+</script>
+<div id="semmi-ad-a9a3bdcb-93f2-47f9-859f-8d5000b361ab"></div>
+-->
+
+<script>
+    window.semmi_ads.push({
+       placeId: '77ae7c40-2568-40f9-8cf8-9f1f28729cf9',
+       containerId: 'semmi-ad-5f26e3e4-d8cf-4271-b1c0-8329b8cecaf0'
+   });
+   //По середине страницы
+</script>
+<div id="semmi-ad-5f26e3e4-d8cf-4271-b1c0-8329b8cecaf0"></div></div>
+<p>Когда завершите, возвращайтесь в главное меню. Там, для сохранения всех изменений нажмите 0. Утилита предупредит, что в конфигурационный файл были добавлены строки настройки и редактировать их не стоит, можно редактировать только то, что до или после них. Если же вы захотите исправить что-то в них, снова запустите команду <strong>zsh-newuser-install</strong>.</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-42-05.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33895" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-42-05-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-42-05-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-42-05-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-42-05.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<p>После завершения настройки вы попадёте в оболочку.</p>
+<h3><span class="ez-toc-section" id="6_%D0%9F%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B8"></span>6. Приглашение оболочки<span class="ez-toc-section-end"></span></h3>
+<p>Наверное, визитная карточка любой оболочки - это приглашение ввода. Именно его мы постоянно видим во время работы с оболочкой. По умолчанию приглашение выглядит слишком просто. Шаблон основного приглашения находится в переменной <strong>$PS1</strong> или <strong>$PROMPT</strong>. Это приглашение ввода показывается при вводе любой команды и его интереснее всего настроить. Доступны такие переменные:</p>
+<ul>
+<li><strong>%m</strong> - имя хоста;</li>
+<li><strong>%n</strong> - имя пользователя;</li>
+<li><strong>%?</strong> - код возврата последней команды;</li>
+<li><strong>%d</strong> - текущая директория;</li>
+</ul>
+<p>Кроме того, здесь поддерживаются различные цвета. Цвет может быть задан для фона или для текста. Следовательно синтаксис установки цвета такой:</p>
+<p><strong><span style="color: #ff9900;">%{</span><span style="color: #99cc00;">$назначение</span><span style="color: #3366ff;">[цвет]</span><span style="color: #ff9900;">%}</span></strong></p>
+<p>В качестве назначения можно использовать<strong> fg</strong>, <strong>fg_bold</strong> или <strong>bg</strong>. А в качестве цвета:</p>
+<ul>
+<li><strong>white</strong> - белый;</li>
+<li><strong>black</strong> - чёрный;</li>
+<li><strong>green</strong> - зеленый;</li>
+<li><strong>cyan</strong> - фиолетовый;</li>
+<li><strong>red</strong> - красный;</li>
+<li><strong>yellow</strong> - желтый;</li>
+<li><strong>magenta</strong> - оранжевый.</li>
+</ul>
+<p>Для сброса цвета используйте конструкцию <strong>%{$reset_color%}</strong>. Дальше можно собрать своё приглашение ввода, например:</p>
+<p><code class="message">PS1="%{$fg[green]%}%m@%n%{$fg[red]%}$ %{$fg[blue]%}%d %{$fg[yellow]%}&gt;%{$reset_color%}"</code></p>
+<p>Для того чтобы это заработало в файл ~/.zshrc надо добавить не только эту строчку, но и следующую:</p>
+<p><code class="message">autoload -U colors &amp;&amp; colors</code></p>
+<p>В результате вы получите такое приглашение ввода:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-22-32-22.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33896" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-22-32-22-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-22-32-22-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-22-32-22-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-22-32-22.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<h3><span class="ez-toc-section" id="7_%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_oh_my_zsh"></span>7. Установка oh my zsh<span class="ez-toc-section-end"></span></h3>
+<p>Если всего этого вам мало, то можно установить скрипт oh my zsh, который реализует множество дополнительных возможностей в zsh. Тут можно выбирать различные темы приглашения, добавлять плагины, например, git, добавлены различные возможности автодополнения и многое другое. Для установки этого скрипта выполните:</p>
+<p><code class="user">curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh</code></p>
+<p>Скрипт установит все плагины и темы oh my zsh в вашу домашнюю папку, а также полностью заменит файл .zshrc на свой:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-59-43.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33898" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-59-43-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-59-43-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-59-43-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-29-21-59-43.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<h3><span class="ez-toc-section" id="8_%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_%D1%82%D0%B5%D0%BC%D1%8B"></span>8. Настройка темы<span class="ez-toc-section-end"></span></h3>
+<p>Одна из самых интересных возможностей oh my zsh - темы. Темы определяют цвета текста, внешний вид приглашения и многое другое. Все доступные темы можно найти в папке <strong>~/.oh-my-zsh/themes</strong>:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-33-53.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33899" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-33-53-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-33-53-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-33-53-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-33-53.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<p>Посмотреть как выглядит та или иная тема можно на <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="nofollow">этой</a> странице. Чтобы выбрать тему откройте файл <strong>~/.zshrc</strong> и пропишите имя темы в строчке <strong>ZSH_THEME</strong>. Именно так выполняется настройка oh my zsh. Мне, например, нравиться тема agnoster, поэтому:</p>
+<p><code class="user">vi ~/.zshrc</code></p>
+<p><code class="message">ZSH_THEME=agnoster</code></p>
+<p>Затем можно перезапустить zsh:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-37-51.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33900" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-37-51-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-37-51-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-37-51-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-37-51.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<p>Но для работы конкретно этой темы надо установить пакет шрифтов:</p>
+<p><code class="user">sudo apt install fonts-powerline</code></p>
+<h3><span class="ez-toc-section" id="9_%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0_%D0%BF%D0%BE_%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E"></span>9. Оболочка по умолчанию<span class="ez-toc-section-end"></span></h3>
+<p>Когда вы завершите с настройкой останется только установить zsh как оболочку по умолчанию для вашего пользователя. Для этого используйте команду chsh:</p>
+<p><code class="user">chsh</code></p>
+<p>Утилита попросит пароль, а затем путь к исполняемому файлу оболочки, которую вы хотите использовать:</p>
+<p><a href="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43.png"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-33901" src="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43-1024x576.png" alt="" width="806" height="453" srcset="https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43-1024x576.png 1024w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43-1536x864.png 1536w, https://losst.pro/wp-content/uploads/2020/09/Snimok-ekrana-ot-2020-09-30-11-54-43.png 1600w" sizes="(max-width: 806px) 100vw, 806px" /></a></p>
+<p>После этого, для текущего пользователя будет использоваться оболочка zsh по умолчанию.</p><div class='rath2aiD rath2aiD-4' style='margin: 8px 0; clear: both;'>
+<div id="adfox_166659402814953089"></div>
+<script>
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.createAdaptive({
+            ownerId: 332443,
+            containerId: 'adfox_166659402814953089',
+            params: {
+                p1: 'cwcgl',
+                p2: 'gxnc'
+            }
+        }, ['desktop', 'tablet'], {
+            tabletWidth: 830,
+            phoneWidth: 480,
+            isAutoReloads: false
+        })
+    })
+</script>
+<script>
+setInterval(function(){            
+window.Ya.adfoxCode.reload('adfox_166659402814953089', {onlyIfWasVisible: true})
+}, 30000);
+</script>
+
+
+×
+<div id="adfox_16665938995317179"></div>
+<script>
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.createAdaptive({
+            ownerId: 332443,
+            containerId: 'adfox_16665938995317179',
+            params: {
+                p1: 'cwcgm',
+                p2: 'hjzu'
+            }
+        }, ['phone'], {
+            tabletWidth: 830,
+            phoneWidth: 480,
+            isAutoReloads: false
+        })
+    })
+</script>
+<script>
+setInterval(function(){            
+window.Ya.adfoxCode.reload('adfox_16665938995317179', {onlyIfWasVisible: true})
+}, 30000);
+</script></div>
+
+<h2><span class="ez-toc-section" id="%D0%92%D1%8B%D0%B2%D0%BE%D0%B4%D1%8B"></span>Выводы<span class="ez-toc-section-end"></span></h2>
+<p>В этой небольшой статье мы рассмотрели два способа настроить zsh для личного использования. Это отличная оболочка, которая может предложить вам намного больше, чем Bash. А какая командная оболочка нравиться больше всего вам? Напишите в комментариях!</p>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-related-none yarpp-template-thumbnails'>
+<!-- YARPP Thumbnails -->
+<h3>Похожие записи</h3>
+<p>Нет похожих записей.</p>
+</div>
+<div class='rath2aiD rath2aiD-3' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Рекомендованный контент -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3031391294356171"
+     data-ad-slot="1454178648"
+     data-ad-format="autorelaxed"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- AI CONTENT END 2 -->
+		</div>
+
+		                <div class="postrating" style="margin-top: 20px;">
+                    <h2>Оцените статью</h2>
+                    <div id="post-ratings-33888" class="post-ratings" data-nonce="6dadd3edcd"><img id="rating_33888_1" src="https://losst.pro/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="Звёзд: 1" title="Звёзд: 1" onmouseover="current_rating(33888, 1, 'Звёзд: 1');" onmouseout="ratings_off(4.3, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_33888_2" src="https://losst.pro/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="Звёзд: 2" title="Звёзд: 2" onmouseover="current_rating(33888, 2, 'Звёзд: 2');" onmouseout="ratings_off(4.3, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_33888_3" src="https://losst.pro/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="Звёзд: 3" title="Звёзд: 3" onmouseover="current_rating(33888, 3, 'Звёзд: 3');" onmouseout="ratings_off(4.3, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_33888_4" src="https://losst.pro/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="Звёзд: 4" title="Звёзд: 4" onmouseover="current_rating(33888, 4, 'Звёзд: 4');" onmouseout="ratings_off(4.3, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_33888_5" src="https://losst.pro/wp-content/plugins/wp-postratings/images/stars_crystal/rating_half.gif" alt="Звёзд: 5" title="Звёзд: 5" onmouseover="current_rating(33888, 5, 'Звёзд: 5');" onmouseout="ratings_off(4.3, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /> (<strong>9</strong> оценок, среднее: <strong>4,33</strong> из 5)<br /><span class="post-ratings-text" id="ratings_33888_text"></span></div><div id="post-ratings-33888-loading" class="post-ratings-loading"><img src="https://losst.pro/wp-content/plugins/wp-postratings/images/loading.gif" width="16" height="16" class="post-ratings-image" /> Загрузка...</div>                </div>
+                                    <div style="margin-top: 30px">
+                        <a target="_blank" rel="license"
+                           href="https://losst.pro/content-policy">
+                            <img alt="Creative Commons License" style="border-width:0"
+                                 src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+                        <br/>
+                        Статья распространяется под лицензией Creative Commons ShareAlike 4.0 при копировании материала ссылка на источник обязательна                        .
+                    </div>
+                		<footer class="entry-meta" aria-label="Entry meta">
+			<span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" /></svg></span><span class="screen-reader-text">Рубрики </span><a href="https://losst.pro/instruktsii" rel="category tag">Инструкции</a></span> 		<nav id="nav-below" class="post-navigation" aria-label="Posts">
+			<div class="nav-previous"><span class="gp-icon icon-arrow-left"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 138.212c0 2.265-1.133 4.813-2.832 6.512L64.276 256.001l111.317 111.277c1.7 1.7 2.832 4.247 2.832 6.513 0 2.265-1.133 4.813-2.832 6.512L161.43 394.46c-1.7 1.7-4.249 2.832-6.514 2.832-2.266 0-4.816-1.133-6.515-2.832L16.407 262.514c-1.699-1.7-2.832-4.248-2.832-6.513 0-2.265 1.133-4.813 2.832-6.512l131.994-131.947c1.7-1.699 4.249-2.831 6.515-2.831 2.265 0 4.815 1.132 6.514 2.831l14.163 14.157c1.7 1.7 2.832 3.965 2.832 6.513z" fill-rule="nonzero" /></svg></span><span class="prev"><a href="https://losst.pro/kak-udalit-ubuntu-16-04" rel="prev">Как удалить Ubuntu</a></span></div><div class="nav-next"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero" /></svg></span><span class="next"><a href="https://losst.pro/kak-zapustit-programmy-windows-na-linux" rel="next">Как запустить exe на Linux</a></span></div>		</nav>
+				</footer>
+		    <div class="postauthor">
+        <h2>Об авторе</h2>
+        <div class="author-box">
+            <img alt='' src='https://losst.pro/wp-content/plugins/losst-optimize/icons/admin-avatar.png'  class='avatar avatar-150 photo' height='150' width='150' loading='lazy' decoding='async'/>            <div class="author-box-content">
+                <div class="vcard clearfix">
+                                            <a href="https://losst.pro/author/admin" class="fn">admin</a>
+                                    </div>
+                                    <p>Основатель и администратор сайта losst.ru, увлекаюсь открытым программным обеспечением и операционной системой Linux. В качестве основной ОС сейчас использую Ubuntu. Кроме Linux, интересуюсь всем, что связано с информационными технологиями и современной наукой.</p>
+                            </div>
+        </div>
+    </div>
+    <div class="clearpostauthor"></div>
+    
+<style>
+.wplogout-social-wrapper {
+	  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    font-size: 0;
+}
+
+.wplogout-social-sharing {
+    font-size: 17px;
+    padding: 7px 20px;
+	  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .wplogout-social-sharing {
+        font-size: 17px;
+        padding: 7px 12px;
+        display: inline-block;
+    }
+}
+
+.wplogout-social-sharing svg {
+    position: relative;
+    top: 0.15em;
+    display: inline-block;
+}
+
+.wplogout-social-sharing:first-of-type {
+    border-radius: 10px 0 0 10px;
+}
+
+.wplogout-social-sharing:last-of-type {
+    border-radius: 0 10px 10px 0;
+}
+
+.wplogout-social-facebook {
+    fill: #fff;
+    background-color: rgba(59, 89, 152, 1);
+
+}
+
+.wplogout-social-facebook:hover {
+    background-color: rgba(59, 89, 152, .8);
+}
+
+.wplogout-social-twitter {
+    fill: #fff;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.wplogout-social-twitter:hover {
+    background-color: rgba(29, 161, 242, .8);
+}
+
+.wplogout-social-pinterest {
+    fill: #fff;
+    background-color: rgba(189, 8, 28, 1);
+}
+
+.wplogout-social-pinterest:hover {
+    background-color: rgba(189, 8, 28, .8);
+}
+
+.wplogout-social-linkedin {
+    fill: #fff;
+    background-color: rgba(0, 119, 181, 1);
+}
+
+.wplogout-social-linkedin:hover {
+    background-color: rgba(0, 119, 181, .8);
+}
+	
+.wplogout-social-telegram{   
+	  fill: #fff;
+    background-color: rgba(0,136,204 ,1);
+}
+
+.wplogout-social-telegram:hover {    
+    background-color: rgba(0,136,204 ,.8);
+}
+
+.wplogout-social-reddit {
+    fill: #fff;
+    background-color: rgba(255, 87, 0, 1);
+}
+
+.wplogout-social-reddit:hover {
+    background-color: rgba(255, 87, 0, .8);
+}
+</style>
+
+<div class="wplogout-social-wrapper">
+		<a class="wplogout-social-sharing wplogout-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+	<a class="wplogout-social-sharing wplogout-social-twitter" href="https://twitter.com/intent/tweet?text=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+Zsh+%D0%B8+Oh+my+Zsh&amp;url=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh&amp;via=losstoffiical" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+	<a class="wplogout-social-sharing wplogout-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh&amp;media=https%3A%2F%2Flosst.pro%2Fwp-content%2Fuploads%2F2020%2F09%2FSnimok-ekrana-ot-2020-09-30-11-54-43.png&amp;description=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+Zsh+%D0%B8+Oh+my+Zsh" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a>
+	<a class="wplogout-social-sharing wplogout-social-linkedin" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh&amp;title=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+Zsh+%D0%B8+Oh+my+Zsh&amp;mini=true" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
+<a class="wplogout-social-sharing wplogout-social-telegram" href="https://t.me/share/url?url=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh&text=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+Zsh+%D0%B8+Oh+my+Zsh" target="_blank" rel="nofollow"><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg></a>
+	<a class="wplogout-social-sharing wplogout-social-reddit" href="https://reddit.com/submit?url=https%3A%2F%2Flosst.pro%2Fnastrojka-zsh-i-oh-my-zsh&title=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+Zsh+%D0%B8+Oh+my+Zsh" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z"/></svg></a>
+</div>	</div>
+</article>
+
+			<div class="comments-area">
+				<div id="comments">
+
+	<h3 class="comments-title">7 комментариев к &ldquo;Настройка Zsh и Oh my Zsh&rdquo;</h3>
+		<ol class="comment-list">
+			
+		<li id="comment-60865" class="comment even thread-even depth-1">
+			<article class="comment-body" id="div-comment-60865"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Мета комментария">
+					<img alt='' src='https://secure.gravatar.com/avatar/7f0a55534001698dbb8cefe97e23485c?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7f0a55534001698dbb8cefe97e23485c?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' decoding='async'/>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Старовер</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh#comment-60865">									<time datetime="2020-10-17T03:24:26+10:30" itemprop="datePublished">
+										17 октября, 2020 в 3:24 дп									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>Статьи интересные, но проверяйте текст на ошибки. В этой статье я насчитал 43 ошибки. Жесть 🙂</p>
+<span class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-60865' data-commentid="60865" data-postid="33888" data-belowelement="div-comment-60865" data-respondelement="respond" data-replyto="Комментарий к записи Старовер" aria-label='Комментарий к записи Старовер'>Ответить</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-61462" class="comment odd alt thread-odd thread-alt depth-1">
+			<article class="comment-body" id="div-comment-61462"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Мета комментария">
+					<img alt='' src='https://secure.gravatar.com/avatar/0a8bedd28e5e6a798052d71896cfd2b6?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/0a8bedd28e5e6a798052d71896cfd2b6?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' decoding='async'/>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Mitai</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh#comment-61462">									<time datetime="2020-10-29T08:44:08+10:30" itemprop="datePublished">
+										29 октября, 2020 в 8:44 дп									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>oh my zsh очень клевый, не знаете как делают что бы в начале пути была иконка ОС, видел в одном видео у чувака была иконка яблоко, в начале строки терминала</p>
+<span class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-61462' data-commentid="61462" data-postid="33888" data-belowelement="div-comment-61462" data-respondelement="respond" data-replyto="Комментарий к записи Mitai" aria-label='Комментарий к записи Mitai'>Ответить</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-62145" class="comment even thread-even depth-1">
+			<article class="comment-body" id="div-comment-62145"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Мета комментария">
+					<img alt='' src='https://secure.gravatar.com/avatar/e90ce215c08585b4117c0a3a957c5260?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e90ce215c08585b4117c0a3a957c5260?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' decoding='async'/>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Vict0r</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh#comment-62145">									<time datetime="2020-11-10T20:44:10+10:30" itemprop="datePublished">
+										10 ноября, 2020 в 8:44 пп									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>Работал все время на bash, решил попробовать zsh и фрейм oh-my-zsh. Но столкнулся с проблемой, что не работают некоторые команды, которые работали из под bash, например: nvm, node, npm. Я так понимаю дело в PATH, но так и не нашел годной статьи по поводу настройки или миграции настроек PATH из bash в zsh. Может кто подскажет?</p>
+<span class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-62145' data-commentid="62145" data-postid="33888" data-belowelement="div-comment-62145" data-respondelement="respond" data-replyto="Комментарий к записи Vict0r" aria-label='Комментарий к записи Vict0r'>Ответить</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-64769" class="comment odd alt thread-odd thread-alt depth-1">
+			<article class="comment-body" id="div-comment-64769"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Мета комментария">
+					<img alt='' src='https://secure.gravatar.com/avatar/7f0a55534001698dbb8cefe97e23485c?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7f0a55534001698dbb8cefe97e23485c?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' decoding='async'/>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Александр</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh#comment-64769">									<time datetime="2020-12-18T11:06:56+10:30" itemprop="datePublished">
+										18 декабря, 2020 в 11:06 дп									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>Приветствую. Это мой конфиг. NPM у меня завелся после установки nodejs без бубна.</p>
+<p>export NVM_DIR="$HOME/.nvm"<br />
+[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; \. "$NVM_DIR/nvm.sh"  # This loads nvm<br />
+[ -s "$NVM_DIR/bash_completion" ] &amp;&amp; \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion</p>
+<p>export PATH=$PATH:$HOME/.config/composer/vendor/bin</p>
+<p>Можно еще копнуть в эту сторону:</p>
+<p><a href="https://github.com/lukechilds/zsh-nvm" rel="nofollow ugc">https://github.com/lukechilds/zsh-nvm</a></p>
+<span class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-64769' data-commentid="64769" data-postid="33888" data-belowelement="div-comment-64769" data-respondelement="respond" data-replyto="Комментарий к записи Александр" aria-label='Комментарий к записи Александр'>Ответить</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-70225" class="comment even thread-even depth-1">
+			<article class="comment-body" id="div-comment-70225"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Мета комментария">
+					<img alt='' src='https://secure.gravatar.com/avatar/d60fbb921b12b91988aa2811f9550659?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d60fbb921b12b91988aa2811f9550659?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' decoding='async'/>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">sergey</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh#comment-70225">									<time datetime="2021-03-05T10:14:49+10:30" itemprop="datePublished">
+										5 марта, 2021 в 10:14 дп									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>У меня не сработала настройка, чтобы запускалась по-умолчанию</p>
+<p>нашел такое решение:<br />
+sudo nano ~/.bashrc</p>
+<p>потом добавить команду в верхнюю часть файла .bashrc<br />
+exec zsh</p>
+<span class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-70225' data-commentid="70225" data-postid="33888" data-belowelement="div-comment-70225" data-respondelement="respond" data-replyto="Комментарий к записи sergey" aria-label='Комментарий к записи sergey'>Ответить</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-82055" class="comment odd alt thread-odd thread-alt depth-1">
+			<article class="comment-body" id="div-comment-82055"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Мета комментария">
+					<img alt='' src='https://secure.gravatar.com/avatar/7c2bcb2f6a26691ec9f45d778dde80dc?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7c2bcb2f6a26691ec9f45d778dde80dc?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' decoding='async'/>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">BigDrive</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh#comment-82055">									<time datetime="2021-06-30T10:51:22+09:30" itemprop="datePublished">
+										30 июня, 2021 в 10:51 дп									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>Bash тоже поддерживает интерактивное автодополнение по Tab, apt install bash-completion.</p>
+<span class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-82055' data-commentid="82055" data-postid="33888" data-belowelement="div-comment-82055" data-respondelement="respond" data-replyto="Комментарий к записи BigDrive" aria-label='Комментарий к записи BigDrive'>Ответить</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-123303" class="comment even thread-even depth-1">
+			<article class="comment-body" id="div-comment-123303"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Мета комментария">
+					<img alt='' src='https://secure.gravatar.com/avatar/d85880e67aec343d31d572981f829cba?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d85880e67aec343d31d572981f829cba?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' decoding='async'/>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Thary</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh#comment-123303">									<time datetime="2022-06-30T12:14:36+09:30" itemprop="datePublished">
+										30 июня, 2022 в 12:14 пп									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>Эта тема такая</p>
+<span class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-123303' data-commentid="123303" data-postid="33888" data-belowelement="div-comment-123303" data-respondelement="respond" data-replyto="Комментарий к записи Thary" aria-label='Комментарий к записи Thary'>Ответить</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+			<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Оставьте комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="/nastrojka-zsh-i-oh-my-zsh#respond" style="display:none;">Отменить ответ</a></small></h3><form action="https://losst.pro/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-form-comment"><label for="comment" class="screen-reader-text">Комментарий</label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p><label for="author" class="screen-reader-text">Имя</label><input placeholder="Имя *" id="author" name="author" type="text" value="" size="30" required />
+<label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30" required />
+<label for="url" class="screen-reader-text">Сайт</label><input placeholder="Сайт" id="url" name="url" type="url" value="" size="30" />
+<div role="note" class="comment-form-policy-top-copy" style="font-size:80%"></div>
+<p class="comment-form-policy">
+            <label for="policy" style="display:block !important">
+                <input id="policy" name="policy" value="policy-key" class="comment-form-policy__input" type="checkbox" style="width:auto; margin-right:7px;" aria-required="true">Я прочитал и принимаю политику конфиденциальнсти. Подробнее <a
+			href="https://losst.pro/politika-konfidentsialnosti"
+			target="_blank"
+			rel=""
+			class="comment-form-policy__see-more-link">Политика конфиденциальности
+		</a><span class="comment-form-policy__required required"> *</span>
+            </label>
+        </p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Комментировать" /> <input type='hidden' name='comment_post_ID' value='33888' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3e2a7ed6a4" /></p><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="124"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+			</div>
+
+					</main>
+	</div>
+
+	<div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+	<div class="inside-right-sidebar">
+		<aside id="block-5" class="widget inner-padding widget_block"><p><div class="widget widget_mslswidget"><div class="lang-switcher"><a href="https://losst.pro/nastrojka-zsh-i-oh-my-zsh" title="Русский" class="current_language">Русский</a></div></div></p>
+</aside><aside id="block-6" class="widget inner-padding widget_block widget_search"><form role="search" method="get" action="https://losst.pro/" class="wp-block-search__button-outside wp-block-search__icon-button wp-block-search"><label for="wp-block-search__input-1" class="wp-block-search__label screen-reader-text">Поиск</label><div class="wp-block-search__inside-wrapper " ><input type="search" id="wp-block-search__input-1" class="wp-block-search__input wp-block-search__input" name="s" value="" placeholder=""  required /><button type="submit" class="wp-block-search__button has-icon wp-element-button"  aria-label="Поиск"><svg class="search-icon" viewBox="0 0 24 24" width="24" height="24">
+					<path d="M13.5 6C10.5 6 8 8.5 8 11.5c0 1.1.3 2.1.9 3l-3.4 3 1 1.1 3.4-2.9c1 .9 2.2 1.4 3.6 1.4 3 0 5.5-2.5 5.5-5.5C19 8.5 16.5 6 13.5 6zm0 9.5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+				</svg></button></div></form></aside><aside id="commands_searcher_widget-3" class="widget inner-padding widget_commands_searcher_widget">        <h2 class="widget-title">        Поиск по командам        </h2>        <form action="https://losst.pro/poisk-komand" method="GET" class="search-form">
+            <style>
+                .comm-searcher-cont {
+                    display: flex;
+                    width: 100%;
+                }
+            </style>
+            <div class='comm-searcher-cont'>
+                <input type="text" name="search" value="" style="height: 47px; width: 70%;"
+                       placeholder="Начните вводить команду"/>
+                <input type="submit" value=Поиск style="width: 30%"/>
+            </div>
+        </form>
+        </aside><aside id="block-7" class="widget inner-padding widget_block"><a href="//losst.pro/nachnite-izuchat-linux-pryamo-sejchas" id="start-linux"><img decoding="async" src="//losst.pro/wp-content/uploads/2016/08/map-2.png"></a></aside><aside id="block-8" class="widget inner-padding widget_block"><a href="//losst.pro/kak-polzovatsya-tekstovym-redaktorom-vim" id="use-vim"><img decoding="async" src="//losst.pro/wp-content/uploads/2016/08/vim-3.png"></a></aside><aside id="popular_posts_widget-2" class="widget inner-padding widget_popular_posts_widget">
+<style>
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background: linear-gradient(250deg, transparent 18px, #ff9950 14px);
+        float: left;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        height: 50px;
+        padding: 14px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        width: 33.33333%;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background: linear-gradient(250deg, transparent 18px, #444444 14px);
+        color: white;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background: linear-gradient(250deg, transparent 14px, #ffffff 14px);
+        color: black;
+    }
+
+    /* Style the tab content */
+    .widget-tab-content {
+        display: none;
+        padding: 15px 12px 6px 0;
+        border-top: none;
+    }
+
+    .widget-tab-content.active {
+        display: block;
+    }
+
+    .ppw-thumbnail {
+        float: left;
+        margin-right: 12px;
+        padding-top: 4px;
+        overflow: hidden;
+    }
+
+    .ppw-postmeta {
+        color: #9499a0;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+
+    .ppw-list{
+        display: block;
+    }
+
+    .ppw-list li {
+        list-style: none;
+    }
+
+    .ppw-clear {
+        clear: both;
+    }
+
+    .ppw-list-item > .entry-title {
+        font-weight: normal;
+        font-size: 16px;
+        text-transform: none;
+        margin-bottom: 5px;
+    }
+
+    .ppw-list a {
+        color: #535b67;
+    }
+
+    .ppw-tag {
+        padding: 10px;
+        margin: 10px 10px 0 0;
+        background-color: white;
+        color: #ff9950;
+        border: 1px solid #ff9950;
+        border-radius: 15px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .ppw-tag:hover {
+        background-color: #ff9950;
+        color: white;
+    }
+</style>
+
+<div class="tab">
+    <button data-for="widget-tab-popular"
+            class="widget-tab-link active">Лучшие</button>
+    <button data-for="widget-tab-latest" class="widget-tab-link">Свежие</button>
+    <button data-for="widget-tab-tags" class="widget-tab-link">Теги</button>
+</div>
+
+<div class="widget-tab-content active" id="widget-tab-popular">
+    <ul class="ppw-list">
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Команда chmod Linux"
+                       href="https://losst.pro/komanda-chmod-linux">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2017/09/Snimok-ekrana-ot-2017-09-24-17-06-05-150x150.png"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Команда chmod Linux"
+                       href="https://losst.pro/komanda-chmod-linux">Команда chmod Linux</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2017-10-10                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Команда find в Linux"
+                       href="https://losst.pro/komanda-find-v-linux">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2016/01/find-150x150.png"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Команда find в Linux"
+                       href="https://losst.pro/komanda-find-v-linux">Команда find в Linux</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2016-01-08                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Права доступа к файлам в Linux"
+                       href="https://losst.pro/prava-dostupa-k-fajlam-v-linux">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2016/10/perm1-150x150.jpeg"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Права доступа к файлам в Linux"
+                       href="https://losst.pro/prava-dostupa-k-fajlam-v-linux">Права доступа к файлам в Linux</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2016-10-06                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Копирование файлов в Linux"
+                       href="https://losst.pro/kopirovanie-fajlov-v-linux">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2015/11/copy-keys-mean-duplicate-copying-replicate-meaning-duplication-replication-342105231-150x150.jpg"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Копирование файлов в Linux"
+                       href="https://losst.pro/kopirovanie-fajlov-v-linux">Копирование файлов в Linux</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2015-11-01                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Поиск текста в файлах Linux"
+                       href="https://losst.pro/gerp-poisk-vnutri-fajlov-v-linux">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2015/08/british-cat-with-a-monocle-318693-150x150.jpg"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Поиск текста в файлах Linux"
+                       href="https://losst.pro/gerp-poisk-vnutri-fajlov-v-linux">Поиск текста в файлах Linux</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2015-08-22                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+            </ul>
+</div>
+
+<div class="widget-tab-content" id="widget-tab-latest">
+    <ul class="ppw-list">
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Как исправить Key is stored in legacy trusted.gpg keyring в Ubuntu"
+                       href="https://losst.pro/kak-ispravit-key-is-stored-in-legacy-trusted-gpg-keyring-v-ubuntu">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2022/12/gpg-legacy-11-150x150.png"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Как исправить Key is stored in legacy trusted.gpg keyring в Ubuntu"
+                       href="https://losst.pro/kak-ispravit-key-is-stored-in-legacy-trusted-gpg-keyring-v-ubuntu">Как исправить Key is stored in legacy trusted.gpg keyring в Ubuntu</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2022-12-17                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Как пользоваться loginctl"
+                       href="https://losst.pro/kak-polzovatsya-loginctl">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2022/11/loginctl-2-150x150.png"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Как пользоваться loginctl"
+                       href="https://losst.pro/kak-polzovatsya-loginctl">Как пользоваться loginctl</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2022-12-06                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Как узнать Wayland или Xorg"
+                       href="https://losst.pro/kak-uznat-wayland-ili-xorg">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2022/11/wayland-4-150x150.png"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Как узнать Wayland или Xorg"
+                       href="https://losst.pro/kak-uznat-wayland-ili-xorg">Как узнать Wayland или Xorg</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2022-11-16                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Установка сертификатов в Ubuntu"
+                       href="https://losst.pro/ustanovka-sertifikatov-v-ubuntu">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2022/10/ubuntu-certs-18-150x150.png"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Установка сертификатов в Ubuntu"
+                       href="https://losst.pro/ustanovka-sertifikatov-v-ubuntu">Установка сертификатов в Ubuntu</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2022-11-06                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+                    <li class="ppw-list-item">
+                <div class="ppw-thumbnail">
+                    <a title="Как пользоваться Ngrok"
+                       href="https://losst.pro/kak-polzovatsya-ngrok">
+                        <img width="75" height="75"
+                             src="https://losst.pro/wp-content/uploads/2022/10/ngrok-14-150x150.png"
+                             class="attachment-75x75 size-75x75 wp-post-image" alt="" decoding="async" loading="lazy"
+                             title=""
+                        > </a>
+                </div>
+                <div class="entry-title">
+                    <a title="Как пользоваться Ngrok"
+                       href="https://losst.pro/kak-polzovatsya-ngrok">Как пользоваться Ngrok</a>
+                </div>
+                <div class="ppw-postmeta">
+                    2022-10-30                </div>
+
+                <div class="ppw-clear"></div>
+            </li>
+            </ul>
+</div>
+
+<div class="widget-tab-content" id="widget-tab-tags">
+            <a class="ppw-tag" href="https://losst.pro/tag/ubuntu">ubuntu</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/ustanovka">установка</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/network">сеть</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/oshibki">ошибки</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/security">безопасность</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/programming">программирование</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/debian">debian</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/linuxmint">linux mint</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/disk">диск</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/bash">bash</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/komandy">команды</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/multimedia">мультимедиа</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/server">сервер</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/centos">centos</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/fajlovaya-sistema">файловая система</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/fedora">fedora</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/grub">grub</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/obnovlenie">обновление</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/kde">kde</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/virtualization">виртуализация</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/windows">windows</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/ofis">офис</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/redaktor">редактор</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/gnome">gnome</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/opensuse">opensuse</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/pakety">пакеты</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/nginx">nginx</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/nastrojka">настройка</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/messendzher">мессенджер</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/wine">wine</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/deb">deb</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/raspberry">raspberry</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/android">android</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/mysql">mysql</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/oshibka">ошибка</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/games">игры</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/unity">unity</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/shifrovanie">шифрование</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/kriptovalyuta">криптовалюта</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/manjaro">manjaro</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/gentoo">gentoo</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/vosstanovlenie">восстановление</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/php">php</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/archlinux">archlinux</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/microsoft">microsoft</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/kubuntu">kubuntu</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/alternativy">альтернативы</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/hardware">оборудование</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/optimizatsiya">оптимизация</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/drajver">драйвер</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/virtualbox">virtualbox</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/grafika">графика</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/portable">portable</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/systemd">systemd</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/snap">snap</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/mikrokompyuter">микрокомпьютер</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/xfce">xfce</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/cinnamon">cinnamon</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/plaginy">плагины</a>
+            <a class="ppw-tag" href="https://losst.pro/tag/ochistka">очистка</a>
+    </div>
+
+<script>
+    document.addEventListener('click', function (event) {
+        if (!event.target.matches('.widget-tab-link')) return;
+
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("widget-tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+        }
+        tablinks = document.getElementsByClassName("widget-tab-link");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        event.target.className += " active";
+        document.getElementById(event.target.getAttribute("data-for")).className += " active";
+
+    }, false);
+</script>
+
+</aside><aside id="block-14" class="widget inner-padding widget_block"><div id="adfox_166565618621565954"></div><script> window.yaContextCb.push(()=>{ Ya.adfoxCode.createAdaptive({ ownerId: 332443, containerId: 'adfox_166565618621565954', params: { p1: 'cvzzx', p2: 'gxxp' } }, ['desktop', 'tablet'], { tabletWidth: 830, phoneWidth: 480, isAutoReloads: false }) }) </script> <script> setInterval(function(){ window.Ya.adfoxCode.reload('adfox_166565618621565954', {onlyIfWasVisible: true}) }, 30000); </script> <p></p>
+<div id="adfox_1665656298596746"></div><script> window.yaContextCb.push(()=>{ Ya.adfoxCode.createAdaptive({ ownerId: 332443, containerId: 'adfox_1665656298596746', params: { p1: 'cvzzz', p2: 'hjzu' } }, ['phone'], { tabletWidth: 830, phoneWidth: 480, isAutoReloads: false }) }) </script> <script> setInterval(function(){ window.Ya.adfoxCode.reload('adfox_1665656298596746', {onlyIfWasVisible: true}) }, 30000); </script></aside><aside id="mc4wp_form_widget-2" class="widget inner-padding widget_mc4wp_form_widget"><h2 class="widget-title">Рассылка</h2><script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.8.12 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-43743" method="post" data-id="43743" data-name="" ><div class="mc4wp-form-fields"><p>
+	<label> 
+		<input type="email" name="EMAIL" placeholder="Ваш E-Mail адрес" required style="width:100%"/>
+</label>
+</p>
+<p>
+    <label>
+        <input name="AGREE_TO_TERMS" type="checkbox" value="1" required=""> Я прочитал(а) и принимаю  <a href="https://losst.pro/politika-konfidentsialnosti" target="_blank">политику конфиденциальности</a>
+    </label>
+</p>
+<p>
+<input type="submit" value="Sign up" style="width:100%"/>
+</p></div><label style="display: none !important;">Оставьте это поле пустым, если вы человек: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1671978146" /><input type="hidden" name="_mc4wp_form_id" value="43743" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></aside><aside id="block-15" class="widget inner-padding widget_block"><p><script>window.semmi_ads.push({placeId: '0281e6fa-5407-401e-b3ad-7ef1ac6778e8', containerId: 'semmi-ad-9c70d488-4ad3-4281-b4a3-69113416726a'});</script></p><div id="semmi-ad-9c70d488-4ad3-4281-b4a3-69113416726a"></div>
+<p></p></aside><aside id="block-12" class="widget inner-padding widget_block">
+<div class="is-layout-constrained wp-block-group"><div class="wp-block-group__inner-container">
+<h2>Вконтакте</h2>
+
+
+
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?146" async=""></script>
+
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+var intervalVK = setInterval(function () {
+if (window.VK) {
+clearInterval(intervalVK);
+VK.Widgets.Group("vk_groups", {redesign: 1, mode: 3, width: "280", height: "300", color1: 'FFFFFF', color2: '000000', color3: '5E81A8'}, 33241754);
+}}, 500);
+</script>
+</div></div>
+</aside><aside id="meta-3" class="widget inner-padding widget_meta"><h2 class="widget-title">Мета</h2>
+		<ul>
+			<li><a rel="nofollow" href="https://losst.pro/wp-login.php?action=register">Регистрация</a></li>			<li><a rel="nofollow" href="https://losst.pro/wp-login.php">Войти</a></li>
+			<li><a href="https://losst.pro/feed">Лента записей</a></li>
+			<li><a href="https://losst.pro/comments/feed">Лента комментариев</a></li>
+
+			
+		</ul>
+
+		</aside><aside id="follow-us-widget-2" class="widget inner-padding widget_follow-us-widget">            <h2 class="widget-title">Следите за нами в социальных сетях</h2>
+        <div id="social1">
+            <a class="social_tack" href="https://twitter.com/Losst_official" target="_blank" rel="noopener">
+                <img class="social" src="https://losst.pro/wp-content/plugins/follow-us-widget//icons/socialtwitter.png"/>
+            </a>
+            <a id="social_tack" href="https://www.facebook.com/losstofficial" target="_blank" rel="noopener">
+                <img class="social" src="https://losst.pro/wp-content/plugins/follow-us-widget//icons/socialfb.png"/>
+            </a>
+            <a class="social_tack" href="https://losst.pro/feed" target="_blank" rel="noopener">
+                <img class="social" src="https://losst.pro/wp-content/plugins/follow-us-widget//icons/socialrss.png"/>
+            </a>
+            <a class="social_tack" href="https://losstofficial.tumblr.com/" target="_blank" rel="noopener">
+                <img class="social" src="https://losst.pro/wp-content/plugins/follow-us-widget//icons/socialtubmlr.png"/>
+            </a>
+            <a class="social_tack" href="https://vk.com/losst_official" target="_blank" rel="noopener">
+                <img class="social" src="https://losst.pro/wp-content/plugins/follow-us-widget//icons/socialpath.png"/>
+            </a>
+            <a class="social_tack" href="https://t.me/losstofficial" target="_blank" rel="noopener">
+                <img class="social" src="https://losst.pro/wp-content/plugins/follow-us-widget//icons/socialtelegram.png"/>
+            </a>
+            <a class="social_tack" href="https://www.youtube.com/channel/UCFhsZ0CeGEXOSpIOUORwbUA" target="_blank" rel="noopener">
+                <img class="social" src="https://losst.pro/wp-content/plugins/follow-us-widget//icons/socialyoutube.png"/>
+            </a>
+        </div>
+        </aside>	</div>
+</div>
+
+	</div>
+</div>
+
+
+<div class="site-footer">
+			<footer class="site-info" aria-label="Сайт"  itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info grid-container">
+								<div class="copyright-bar">
+					&copy;Losst 2022 CC-BY-SA            <a href="https://losst.pro/politika-konfidentsialnosti">
+                Политика конфиденциальности            </a>
+            				</div>
+			</div>
+		</footer>
+		<span style="justify-content: left;
+    position: relative;
+    bottom: 50px;
+    left: 60px;"><!--LiveInternet counter-->
+	<script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t52.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: number of pageviews and visitors"+
+" for 24 hours is shown' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet--></span></div>
+
+<a title="Прокрутка вверх" aria-label="Прокрутка вверх" rel="nofollow" href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+					<span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero" /></svg></span>
+				</a>		<nav id="generate-slideout-menu" class="main-navigation slideout-navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope style="display: none;" aria-hidden>
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="main-nav"><ul id="menu-kategorii-2" class=" slideout-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8567"><a href="//losst.pro/">Главная</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8575"><a href="https://losst.pro/novosti">Новости</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8568"><a href="#" target="_blank" rel="nofollow">Категории<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19733"><a href="https://losst.pro/instruktsii">Инструкции</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30336"><a href="https://losst.pro/commands">Команды</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8580"><a href="https://losst.pro/distributivu">Дистрибутивы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8571"><a href="https://losst.pro/rewiews">Обзоры</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8582"><a href="https://losst.pro/applications">Программы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8588"><a href="https://losst.pro/system">Система</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8584"><a href="https://losst.pro/oformlenie">Оформление</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8577"><a href="https://losst.pro/terminal">Терминал</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8579"><a href="https://losst.pro/info">Информация</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8569"><a href="https://losst.pro/security">Безопасность</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8587"><a href="https://losst.pro/server">Сервер</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8586"><a href="https://losst.pro/yadro">Ядро</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8585"><a href="https://losst.pro/programming">Программирование</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8578"><a href="https://losst.pro/games">Игры</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8583"><a href="https://losst.pro/multimedia">Мультимедиа</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8570"><a href="https://losst.pro/android">Android</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8572"><a href="https://losst.pro/windows">Windows</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8581"><a href="https://losst.pro/hardware">Оборудование</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8574"><a href="#" target="_blank" rel="nofollow">Рекомендуем<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8600"><a href="https://losst.pro/vybor-distributiva">Дистрибутив</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8601"><a href="https://losst.pro/gvim">Текстовый редактор</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43707"><a href="https://losst.pro/vlc">Видеоплеер</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8589"><a href="https://losst.pro/knigi">Книги</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26354"><a href="https://losst.pro/dostupnye-golosovaniya">Опросы</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8573"><a href="#" target="_blank" rel="nofollow">Losst<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8598"><a href="https://losst.pro/about">О Проекте</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8609"><a href="https://losst.pro/istoriya-losst">История Losst</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8599"><a href="https://losst.pro/obratnaya-svyaz">Обратная связь</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8607"><a href="https://losst.pro/nachnite-izuchat-linux-pryamo-sejchas">Содержание сайта</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22834"><a href="https://losst.pro/litsenziya-creative-commons-attribution-share-alike-4-0">Использование материалов</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41251"><a href="https://losst.pro/reklama">Реклама</a></li>
+</ul>
+</li>
+</ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+
+					<div class="slideout-overlay">
+									<button class="slideout-exit has-svg-icon">
+						<span class="gp-icon pro-close">
+				<svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+					<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+				</svg>
+			</span>						<span class="screen-reader-text">Закрыть</span>
+					</button>
+							</div>
+			<script>(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script><script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script>
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+<script type="text/javascript">
+		var recaptcha_widgets={};
+		function wp_recaptchaLoadCallback(){
+			try {
+				grecaptcha;
+			} catch(err){
+				return;
+			}
+			var e = document.querySelectorAll ? document.querySelectorAll('.g-recaptcha:not(.wpcf7-form-control)') : document.getElementsByClassName('g-recaptcha'),
+				form_submits;
+
+			for (var i=0;i<e.length;i++) {
+				(function(el){
+					var wid;
+					// check if captcha element is unrendered
+					if ( ! el.childNodes.length) {
+						wid = grecaptcha.render(el,{
+							'sitekey':'6Lfr12wiAAAAAFzqwQQeEvnu9DYQy_kUUbqcFBzV',
+							'theme':el.getAttribute('data-theme') || 'light'
+						});
+						el.setAttribute('data-widget-id',wid);
+					} else {
+						wid = el.getAttribute('data-widget-id');
+						grecaptcha.reset(wid);
+					}
+				})(e[i]);
+			}
+		}
+
+		// if jquery present re-render jquery/ajax loaded captcha elements
+		if ( typeof jQuery !== 'undefined' )
+			jQuery(document).ajaxComplete( function(evt,xhr,set){
+				if( xhr.responseText && xhr.responseText.indexOf('6Lfr12wiAAAAAFzqwQQeEvnu9DYQy_kUUbqcFBzV') !== -1)
+					wp_recaptchaLoadCallback();
+			} );
+
+		</script><script src="https://www.google.com/recaptcha/api.js?onload=wp_recaptchaLoadCallback&#038;render=explicit" async defer></script>
+<!-- END recaptcha -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65316510-1', 'auto');
+  ga('send', 'pageview');
+  setTimeout("ga('send','event','Engaged users','More than 15 seconds')",15000);
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZQNV58CVN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8ZQNV58CVN');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter30875541 = new Ya.Metrika({
+                    id:30875541,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/30875541" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --><link rel='stylesheet' id='yarppRelatedCss-css' href='https://losst.pro/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=5.30.1' media='all' />
+<script src='https://losst.pro/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.2.0' id='generate-sticky-js'></script>
+<script id='generate-offside-js-extra'>
+var offSide = {"side":"left"};
+</script>
+<script src='https://losst.pro/wp-content/plugins/gp-premium/menu-plus/functions/js/offside.min.js?ver=2.2.0' id='generate-offside-js'></script>
+<script src='https://losst.pro/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7' id='swv-js'></script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/losst.pro\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script src='https://losst.pro/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7' id='contact-form-7-js'></script>
+<script id='wp-polls-js-extra'>
+var pollsL10n = {"ajax_url":"https:\/\/losst.pro\/wp-admin\/admin-ajax.php","text_wait":"\u0412\u0430\u0448 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u0435\u0449\u0435 \u043e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u043f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 ...","text_valid":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0442\u0432\u0435\u0442.","text_multiple":"\u041c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e \u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u043e\u0435 \u0447\u0438\u0441\u043b\u043e \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432:","show_loading":"1","show_fading":"1"};
+</script>
+<script src='https://losst.pro/wp-content/plugins/wp-polls/polls-js.js?ver=2.77.0' id='wp-polls-js'></script>
+<script id='wp-postratings-js-extra'>
+var ratingsL10n = {"plugin_url":"https:\/\/losst.pro\/wp-content\/plugins\/wp-postratings","ajax_url":"https:\/\/losst.pro\/wp-admin\/admin-ajax.php","text_wait":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043d\u0435 \u0433\u043e\u043b\u043e\u0441\u0443\u0439\u0442\u0435 \u0437\u0430 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e.","image":"stars_crystal","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src="https://losst.pro/wp-content/plugins/wp-postratings/images/stars_crystal/rating_over.gif";;
+</script>
+<script src='https://losst.pro/wp-content/plugins/wp-postratings/js/postratings-js.js?ver=1.90' id='wp-postratings-js'></script>
+<!--[if lte IE 11]>
+<script src='https://losst.pro/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.2.1' id='generate-classlist-js'></script>
+<![endif]-->
+<script id='generate-menu-js-extra'>
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043f\u043e\u0434\u043c\u0435\u043d\u044e","closeSubMenuLabel":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c \u043f\u043e\u0434\u043c\u0435\u043d\u044e"};
+</script>
+<script src='https://losst.pro/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.2.1' id='generate-menu-js'></script>
+<script id='generate-back-to-top-js-extra'>
+var generatepressBackToTop = {"smooth":"1"};
+</script>
+<script src='https://losst.pro/wp-content/themes/generatepress/assets/js/back-to-top.min.js?ver=3.2.1' id='generate-back-to-top-js'></script>
+<script src='https://losst.pro/wp-includes/js/comment-reply.min.js?ver=6.1.1' id='comment-reply-js'></script>
+<script src='https://www.google.com/recaptcha/api.js?render=6LfKnIMUAAAAAALa9ztzFvYMt7vzvfzalxXAnmeH&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script src='https://losst.pro/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script src='https://losst.pro/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script id='wpcf7-recaptcha-js-extra'>
+var wpcf7_recaptcha = {"sitekey":"6LfKnIMUAAAAAALa9ztzFvYMt7vzvfzalxXAnmeH","actions":{"homepage":"homepage","contactform":"contactform"}};
+</script>
+<script src='https://losst.pro/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.7' id='wpcf7-recaptcha-js'></script>
+<script src='https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=6.1.1' async='async' id='remote_sdk-js'></script>
+<script src='https://losst.pro/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?ver=2.2.0' id='ez-toc-jquery-smooth-scroll-js'></script>
+<script src='https://losst.pro/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1' id='ez-toc-js-cookie-js'></script>
+<script src='https://losst.pro/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2' id='ez-toc-jquery-sticky-kit-js'></script>
+<script id='ez-toc-js-js-extra'>
+var ezTOC = {"smooth_scroll":"1","scroll_offset":"100"};
+</script>
+<script src='https://losst.pro/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.38-1669115645' id='ez-toc-js-js'></script>
+<script defer src='https://losst.pro/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1670934812' id='akismet-frontend-js'></script>
+<script defer src='https://losst.pro/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.12' id='mc4wp-forms-api-js'></script>
+
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Кэширование объекта 412/508 объектов с помощью apc
+Кэширование страницы с использованием disk: enhanced 
+
+Served from: losst.pro @ 2022-12-26 00:52:26 by W3 Total Cache
+-->
