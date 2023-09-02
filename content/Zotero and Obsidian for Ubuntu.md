@@ -1,13 +1,13 @@
 # Введение
 Здравствуй, дорогой читатель! В этой статье я расскажу, как установить и использовать сборщик цитат и литературы [Zotero](https://www.zotero.org/)вместе с инструментом для [ведения](https://habr.com/ru/articles/710508/) заметок [Obsidian](https://obsidian.md/) на Ubuntu 22.04.
-
-# Установка Obsidian
 # Установка Zotero
 1. Скачиваем [архив](https://www.zotero.org/download/)  (на текущий момент - Zotero-6.0.26_linux-x86_64.tar.bz2)
 2. Распаковываем в ту папку, куда вам удобно (например `/opt/zotero`). 
 3. Запускаем скрипт для установки иконки .desktop файла (`set_launcher_icon`)
 4. Затем выполняем команду `ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop` (вместо /opt/zotero/ подставьте место, куда распаковали архив)
 5. Проверяем, чтобы в файле `/home/username/.config/mimeapps.list` была строчка `x-scheme-handler/zotero=zotero.desktop;`
+### Установка [Obsidian](https://obsidian.md/download) проходит намного проще.
+
 # Настройка Zotero
 
 Скачиваем  и [устанавливаем](https://retorque.re/zotero-better-bibtex/installation/) расширение Better BibTex (Tools -> Add-ons -> ⚙️-> Install Add-on from file -> [файл .xpi](https://github.com/retorquere/zotero-better-bibtex/releases/tag/v6.7.116) ) 
@@ -59,5 +59,5 @@ Community plugins -> Zotero integration -> + ->
 
 
 После  чего, переходим в Obsidian и:
-![Демонстрация работы](https://www.youtube.com/watch?v=zHUKgPBUC-w)
+[Демонстрация работы](https://www.youtube.com/watch?v=zHUKgPBUC-w)
 
