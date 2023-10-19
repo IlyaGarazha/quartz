@@ -1,12 +1,12 @@
 import { pathToRoot, slugTag } from "../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-function TagList({ fileData }: QuartzComponentProps) {
+function TagList({ fileData, displayClass }: QuartzComponentProps) {
   const tags = fileData.frontmatter?.tags
   const baseDir = pathToRoot(fileData.slug!)
   if (tags && tags.length > 0) {
     return (
-      <ul class="tags">
+      <ul class={`tags ${displayClass ?? ""}`}>
         {tags.map((tag) => {
           const display = `#${tag}`
           const linkDest = baseDir + `/tags/${slugTag(tag)}`
@@ -28,7 +28,8 @@ function TagList({ fileData }: QuartzComponentProps) {
 TagList.css = `
 .tags {
   list-style: none;
-  display: flex;
+  display:flex;
+  flex-wrap: wrap;
   padding-left: 0;
   gap: 0.4rem;
   margin: 1rem 0;
@@ -44,7 +45,8 @@ TagList.css = `
 a.tag-link {
   border-radius: 8px;
   background-color: var(--highlight);
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.4rem;
+  margin: 0 0.1rem;
 }
 `
 

@@ -3,7 +3,8 @@ import { FullSlug, SimpleSlug, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/recentNotes.scss"
-import { Date } from "./Date"
+import { Date, getDate } from "./Date"
+import { GlobalConfiguration } from "../cfg"
 
 interface Options {
   title: string
@@ -13,22 +14,21 @@ interface Options {
   sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number
 }
 
-const defaultOptions: Options = {
+const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   title: "Recent Notes",
   limit: 3,
   linkToMore: false,
   filter: () => true,
-  sort: byDateAndAlphabetical,
-}
+  sort: byDateAndAlphabetical(cfg),
+})
 
 export default ((userOpts?: Partial<Options>) => {
-  const opts = { ...defaultOptions, ...userOpts }
-  function RecentNotes(props: QuartzComponentProps) {
-    const { allFiles, fileData, displayClass } = props
+  function RecentNotes({ allFiles, fileData, displayClass, cfg }: QuartzComponentProps) {
+    const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     return (
-      <div class={`recent-notes ${displayClass}`}>
+      <div class={`recent-notes ${displayClass ?? ""}`}>
         <h3>{opts.title}</h3>
         <ul class="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
@@ -47,7 +47,7 @@ export default ((userOpts?: Partial<Options>) => {
                   </div>
                   {page.dates && (
                     <p class="meta">
-                      <Date date={page.dates.modified} />
+                      <Date date={getDate(cfg, page)!} />
                     </p>
                   )}
                   <ul class="tags">
