@@ -31,10 +31,11 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 Для добавления ssh-ключа к ssh-клиенту необходимо
 
 *Для Windows*:
-Запустите PowerShell от имени администратора и введите следующие команды:
+Запустите PowerShell от *имени администратора*! и введите следующие команды:
 ```powershell
-# start the ssh-agent in the background
 Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+```
+```powershell
 Start-Service ssh-agent
 ```
 А затем в обычном терминале выполните
