@@ -28,12 +28,24 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ````
 
 И можете 3 раза подряд нажать `Enter`
-Для добавления ssh-ключа к ssh-клиенту необходимо:
-Для Windows:
+Для добавления ssh-ключа к ssh-клиенту необходимо
+
+*Для Windows*:
+Запустите PowerShell от имени администратора и введите следующие команды:
+```powershell
+# start the ssh-agent in the background
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+Start-Service ssh-agent
+```
+А затем в обычном терминале выполните
 ```powershell
 ssh-add /c/Users/ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ/.ssh/id_ed25519
 ```
 Для Linux:
+```shell
+eval "$(ssh-agent -s)"
+```
+
 ```shell
 ssh-add ~/.ssh/id_ed25519
 ```
