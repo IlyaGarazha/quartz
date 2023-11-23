@@ -2,9 +2,10 @@
 ```
 sem_11__
 	src__
-		main.cpp
-		sem_11.cpp
-		sem_11.h
+		main__
+			main.cpp
+			sem_11.cpp
+			sem_11.h
 	CMakeLists.txt
 ```
 
