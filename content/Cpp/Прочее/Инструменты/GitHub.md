@@ -75,3 +75,4 @@ ssh-add ~/.ssh/id_ed25519
 ![[Pasted image 20231122132639.png]]
 
 Добавьте SSH-ссылку на ваш репозиторий в [таблицу](https://docs.google.com/spreadsheets/d/1-z5g3qONlWRbUw1o7h92xSSIezMLCQ-N9SXuvzgX3FQ/edit#gid=493963240).
+
