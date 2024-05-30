@@ -45,3 +45,28 @@ enable_testing()
 
 В результате у вас выполнится файл, а также будут указаны предупреждения
 ![[Pasted image 20231123111627.png]]
+
+# Работа с макросами 
+
+[target_compile_definitions](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html)
+```make
+target_compile_definitions(${PROJECT_NAME} FOO_MACROS)
+```
+Чтобы решить проблему того, что внутри CMakeLists.txt определены макросы, но это не отображается в VS Code, то можно [добавить](https://stackoverflow.com/questions/74110661/how-to-disable-intelllisense-errors-in-vscode-when-using-macros-defined-with-d) этот макрос в c_cpp_properties.json текущего проекта наш макрос:
+```json
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "BLACK_THEME"
+            ],
+            "cStandard": "c17"
+        }
+    ],
+    "version": 4
+}
+```
